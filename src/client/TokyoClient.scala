@@ -1,6 +1,6 @@
 package client
 
-import java.rmi.{Remote, RemoteException}
+import java.rmi._
 
 trait TokyoClient extends Remote {
   @throws(classOf[RemoteException]) def startGame(): Unit
